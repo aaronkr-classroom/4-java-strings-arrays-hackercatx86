@@ -1,0 +1,48 @@
+
+public class Ex603 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		double[] myGrades = new double[] {
+			89.1, 95.0, 87.7, 88.3, 100.0
+		};
+		
+		double sum = 0.0;
+		double avg = 0.0;
+		*/
+		// 2 dimensional array
+		double[][] myClassGrades = new double[][] {
+				{89.1, 88.2, 83.2, 85.5, 75.2},
+				{95.0, 93.2, 91.1, 89.9, 75.5},
+				{87.7, 65.2, 54.2, 32.1, 10.0},
+				{88.3, 66.6, 77.7, 88.8, 99.9},
+				{100.0, 99.9, 98.0, 97.6, 100.0}
+			};
+		
+		String[] myClasses = new String[] {
+			"korean", "math", "engineering", "social", "pe"	
+		};
+		
+		for(int i = 0; i < myClasses.length; i++) {
+			System.out.print(myClasses[i] + ": ");
+			for(int j = 0; j <5; j++) {
+				System.out.print(myClassGrades[i][j] + ", ");
+			}
+			System.out.println();
+		}
+		
+		/*	
+		for(double g : myGrades) {
+			sum += g;
+		}
+		
+		avg = sum / myGrades.length;
+		
+		System.out.println("Sum: " + sum);
+		System.out.format("Avg: %.2f", avg);
+		*/
+		
+	}
+
+}
